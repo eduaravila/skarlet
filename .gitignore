@@ -10,3 +10,7 @@
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+.routify
+
+dist

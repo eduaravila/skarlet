@@ -40,7 +40,7 @@ export default {
     sourcemap: true,
     format: "esm",
     name: "app",
-    dir: "dist/build",
+    dir: "public/build",
   },
   plugins: [
     svelte({

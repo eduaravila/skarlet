@@ -7,15 +7,13 @@
 items-center
 justify-between
 w-full
-py-4
 md:py-0
-px-4
-text-lg text-gray-700
+text-lg
+relative
+h-32
 "
 >
   <div class="flex flex-row">
     <Logo />
-    <div>2</div>
-    <div>3</div>
   </div>
 </nav>

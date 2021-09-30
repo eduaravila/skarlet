@@ -27,10 +27,13 @@
 h-full
 w-full
 bg-white
-dark:bg-gray-800"
+text-black
+dark:bg-gray-800 
+dark:text-white"
+
 >
-  <header><Nav /></header>
   <div class="container mx-auto">
+    <header><Nav /></header>
     <slot />
   </div>
 </body>

@@ -4,10 +4,13 @@
 
 <body
   class="
-antialiased
-container mx-auto
+h-full
+w-full
+bg-yellow-50
 "
 >
-  <header><Nav /></header>
-  <slot />
+  <div class="container mx-auto">
+    <header><Nav /></header>
+    <slot />
+  </div>
 </body>

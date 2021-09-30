@@ -11,7 +11,6 @@ py-4
 md:py-0
 px-4
 text-lg text-gray-700
-bg-red-100
 "
 >
   <div class="flex flex-row">

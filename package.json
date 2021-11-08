@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "run-p dev:*",
+    "dev": "run-p 'dev:*'",
     "dev:rollup": "rollup -c -w",
     "dev:routify": "routify",
     "build": "routify -b && rollup -c",

@@ -1,5 +1,5 @@
 <script>
-  import Nav from "../components/nav/Nav.svelte";
+  import Nav from "../components/Nav/Nav.svelte";
 
   if (
     localStorage.theme === "dark" ||

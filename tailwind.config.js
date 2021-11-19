@@ -22,6 +22,9 @@ module.exports = {
         light: "rgb(9, 12, 16)",
         dark: "rgb(178 178 178)",
       },
+      kwai: {
+        light: "#ce5065",
+      },
     },
     extend: {
       fontFamily: {

@@ -3,4 +3,9 @@
   export let href;
 </script>
 
-<a href={$url(href)} class="underline"> <slot /></a>
+<a
+  href={$url(href)}
+  class="text-primary-light text-xl dark:text-gray-50 hover:underline visited:text-kwai-light"
+>
+  <slot /></a
+>

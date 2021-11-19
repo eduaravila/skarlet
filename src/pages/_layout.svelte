@@ -1,5 +1,16 @@
 <script>
+  import { metatags,page } from "@roxi/routify";
   import Nav from "../components/Nav/Nav.svelte";
+
+  $: {
+    switch ($page.title) {
+      case "index":
+        $metatags.title = "Home";
+        break;
+      default:
+        $metatags.title = $page.title;
+    }
+  }
 
   if (
     localStorage.theme === "dark" ||

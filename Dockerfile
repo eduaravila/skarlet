@@ -15,6 +15,6 @@ ENV PORT=8080
 ENV HOST=0.0.0.0
 EXPOSE 8080
 
-VOLUME [/usr/src/app]
+VOLUME ["/usr/src/app"]
 
 CMD ["npm","run","dev"]

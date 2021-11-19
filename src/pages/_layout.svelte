@@ -11,14 +11,6 @@
     document.documentElement.classList.remove("dark");
   }
 
-  // Whenever the user explicitly chooses light mode
-  localStorage.theme = "light";
-
-  // Whenever the user explicitly chooses dark mode
-  localStorage.theme = "dark";
-
-  // Whenever the user explicitly chooses to respect the OS preference
-  localStorage.removeItem("theme");
 </script>
 
 <body
@@ -26,11 +18,10 @@
   dark
 h-full
 w-full
-bg-white
+bg-secondary-light
 text-black
-dark:bg-gray-800 
+dark:bg-secondary-dark 
 dark:text-white"
-
 >
   <div class="container mx-auto">
     <header><Nav /></header>

@@ -10,9 +10,14 @@ module.exports = {
     enabled: production, // disable purge in dev
   },
   mode: "jit",
-  darkMode: 'class',
+  darkMode: "media",
   theme: {
-    extend: {},
+    colors: {
+      secondary: {
+        light: "rgb(178 178 178)",
+        dark: "rgb(9, 12, 16)",
+      },
+    },
   },
   variants: {
     extend: {},

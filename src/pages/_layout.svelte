@@ -10,18 +10,17 @@
   } else {
     document.documentElement.classList.remove("dark");
   }
-
 </script>
 
 <body
   class="
-  dark
-h-full
-w-full
+min-h-screen
 bg-secondary-light
 text-black
 dark:bg-secondary-dark 
-dark:text-white"
+dark:text-white
+font-sans
+bg-grey-900"
 >
   <div class="container mx-auto">
     <header><Nav /></header>

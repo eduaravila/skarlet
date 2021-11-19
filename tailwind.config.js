@@ -1,4 +1,5 @@
 const production = !process.env.ROLLUP_WATCH;
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: {
@@ -13,9 +14,18 @@ module.exports = {
   darkMode: "media",
   theme: {
     colors: {
+      primary: {
+        light: "rgb(255	255	255)",
+        dark: "black",
+      },
       secondary: {
-        light: "rgb(178 178 178)",
-        dark: "rgb(9, 12, 16)",
+        light: "rgb(9, 12, 16)",
+        dark: "rgb(178 178 178)",
+      },
+    },
+    extend: {
+      fontFamily: {
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
     },
   },

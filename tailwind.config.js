@@ -13,17 +13,19 @@ module.exports = {
   mode: "jit",
   darkMode: "media",
   theme: {
-    colors: {
-      primary: {
-        light: "rgb(255	255	255)",
-        dark: "black",
-      },
-      secondary: {
-        light: "rgb(9, 12, 16)",
-        dark: "rgb(178 178 178)",
-      },
-      kwai: {
-        light: "#ce5065",
+    extend: {
+      colors: {
+        primary: {
+          light: "rgb(255	255	255)",
+          dark: "black",
+        },
+        secondary: {
+          light: "rgb(9, 12, 16)",
+          dark: "rgb(178 178 178)",
+        },
+        kwai: {
+          light: "#ce5065",
+        },
       },
     },
     extend: {

@@ -32,16 +32,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@barba/core@npm:^2.9.7":
-  version: 2.9.7
-  resolution: "@barba/core@npm:2.9.7"
-  dependencies:
-    is-promise: ^2.1.0
-    path-to-regexp: ^3.0.0
-  checksum: 4cd40664810242acf752667e773aab0c56fed4fa482b6c6091f5a127588e39ca4ac1c125bbaf33de07b8509b60c4a60337bb880dd4c40ab13a8a6bcee7e18e96
-  languageName: node
-  linkType: hard
-
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
@@ -377,6 +367,13 @@ __metadata:
     clean-stack: ^2.0.0
     indent-string: ^4.0.0
   checksum: 1101a33f21baa27a2fa8e04b698271e64616b886795fd43c31068c07533c7b3facfcaf4e9e0cab3624bd88f729a592f1c901a1a229c9e490eafce411a8644b79
+  languageName: node
+  linkType: hard
+
+"animejs@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "animejs@npm:3.2.1"
+  checksum: 6939171bed17d6b28307747e564d33e93312c26169b98498c833117d86f174ce7a318469bfd81716c223860a6d13bd76b761e79e765b86b2a2f851963caaa851
   languageName: node
   linkType: hard
 
@@ -2074,13 +2071,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"is-promise@npm:^2.1.0":
-  version: 2.2.2
-  resolution: "is-promise@npm:2.2.2"
-  checksum: 18bf7d1c59953e0ad82a1ed963fb3dc0d135c8f299a14f89a17af312fc918373136e56028e8831700e1933519630cc2fd4179a777030330fde20d34e96f40c78
-  languageName: node
-  linkType: hard
-
 "is-reference@npm:^1.2.1":
   version: 1.2.1
   resolution: "is-reference@npm:1.2.1"
@@ -3002,13 +2992,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"path-to-regexp@npm:^3.0.0":
-  version: 3.2.0
-  resolution: "path-to-regexp@npm:3.2.0"
-  checksum: c3d35cda3b26d9e604d789b9a1764bb9845f53ca8009d5809356b4677a3c064b0f01117a05a5b4b77bafd5ae002a82592e3f3495e885c22961f8b1dab8bd6ae7
-  languageName: node
-  linkType: hard
-
 "path-type@npm:^1.0.0":
   version: 1.1.0
   resolution: "path-type@npm:1.1.0"
@@ -3759,12 +3742,12 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "skarlet@workspace:."
   dependencies:
-    "@barba/core": ^2.9.7
     "@rollup/plugin-commonjs": ^17.0.0
     "@rollup/plugin-node-resolve": ^11.0.0
     "@rollup/plugin-typescript": ^8.0.0
     "@roxi/routify": ^2.18.3
     "@tsconfig/svelte": ^2.0.1
+    animejs: ^3.2.1
     autoprefixer: latest
     express: ^4.17.1
     npm-run-all: ^4.1.5

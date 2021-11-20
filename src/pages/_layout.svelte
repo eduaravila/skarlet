@@ -1,13 +1,15 @@
 <script>
   import { metatags,page } from "@roxi/routify";
+  import { TabsTransition } from "@roxi/routify/decorators";
+  import anime from "animejs/lib/anime.es.js";
   import Nav from "../components/Nav/Nav.svelte";
-  import { getTitle } from "../utils/page";
-
+  import { getTitle,is404 } from "../utils/page";
   /**
    * Dynamic prop to get the current title
    * depending the page
    */
   $: currentRouteTitle = getTitle($page);
+  const _is404 = is404($page);
   $: metatags.title = currentRouteTitle;
 
   if (
@@ -19,11 +21,49 @@
   } else {
     document.documentElement.classList.remove("dark");
   }
+
+  const transition = () => {
+    anime({
+      targets: ".loading-screen",
+      width: "100%", // -> from '28px' to '100%',
+      left: "0%",
+      easing: "easeInOutQuad",
+      direction: "alternate",
+      loop: false,
+    });
+
+    anime({
+      targets: ".loading-screen",
+      width: "100%", // -> from '28px' to '100%',
+      left: "100%",
+      easing: "easeInOutQuad",
+      direction: "alternate",
+      loop: false,
+    });
+  };
 </script>
 
-<header><Nav /></header>
-<div class="container mx-auto">
-  <main data-barba="container" data-barba-namespace={currentRouteTitle}>
-    <slot />
-  </main>
+<div
+  class="loading-container fixed top-0 w-full h-screen overflow-hidden z-10 pointer-events-none"
+>
+  <div class="loading-screen relative p-0 w-0 h-full" />
 </div>
+
+<header><Nav /></header>
+
+<main class="inset">
+  {#if !_is404}
+    <div
+      class="lg:w-5/6
+    container
+  sm:mx-auto grid grid-cols-6 gap-4 self-center"
+    >
+      <div class="bg-gray-300 mt-8 rounded-sm p-8 col-span-4">
+        <slot decorator={TabsTransition} />
+      </div>
+      <div class="bg-gray-300 mt-8 rounded-sm p-8 col-span-2" />
+    </div>
+  {:else}
+    <slot decorator={TabsTransition} />
+  {/if}
+</main>

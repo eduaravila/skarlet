@@ -1,5 +1,5 @@
 {
-  "name": "svelte-app",
+  "name": "skarlet",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,8 +7,9 @@
     "dev:rollup": "rollup -c -w",
     "dev:routify": "routify",
     "build": "routify -b && rollup -c",
-    "start": "sirv public --no-clear",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "start": "sirv public --no-clear -s",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "serve": "node server.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -33,6 +34,7 @@
   },
   "dependencies": {
     "@barba/core": "^2.9.7",
+    "express": "^4.17.1",
     "sirv-cli": "^1.0.0",
     "yarn-run-all": "^3.1.1"
   }

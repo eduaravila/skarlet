@@ -1,16 +1,14 @@
 <script>
   import { metatags,page } from "@roxi/routify";
   import Nav from "../components/Nav/Nav.svelte";
+  import { getTitle } from "../utils/page";
 
-  $: {
-    switch ($page.title) {
-      case "index":
-        $metatags.title = "Home";
-        break;
-      default:
-        $metatags.title = $page.title;
-    }
-  }
+  /**
+   * Dynamic prop to get the current title
+   * depending the page
+   */
+  $: currentRouteTitle = getTitle($page);
+  $: metatags.title = currentRouteTitle;
 
   if (
     localStorage.theme === "dark" ||
@@ -23,18 +21,9 @@
   }
 </script>
 
-<body
-  class="
-min-h-screen
-bg-secondary-light
-text-black
-dark:bg-secondary-dark 
-dark:text-white
-font-sans
-bg-grey-900"
->
-  <div class="container mx-auto">
-    <header><Nav /></header>
+<header><Nav /></header>
+<div class="container mx-auto">
+  <main data-barba="container" data-barba-namespace={currentRouteTitle}>
     <slot />
-  </div>
-</body>
+  </main>
+</div>

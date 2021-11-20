@@ -1,0 +1,13 @@
+---
+title: Software and stuff
+layout: article
+date: 20 Nov 2021
+author: Eduardo Avila
+---
+
+
+My personal blog of tech and life.
+
+Mainly about web development and mobile development, probably another topics would sneak in.
+
+

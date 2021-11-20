@@ -53,7 +53,11 @@ export default {
             plugins: [require("tailwindcss"), require("autoprefixer")()],
           },
         }),
-        mdsvex(),
+        mdsvex({
+          layout: {
+            article: "/src/layouts/article.svelte",
+          },
+        }),
       ],
       compilerOptions: {
         // enable run-time checks when not in production

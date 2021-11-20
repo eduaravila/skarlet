@@ -14,11 +14,12 @@ self-center
 p-8
 "
 >
-  <LogoText/>
-  <div class="flex justify-center space-x-10 mt-4 mx:space-x-1">
+  <LogoText />
+  <div class="flex justify-center flex-col md:flex-row md:space-x-16 lg:flex-row mt-4 ">
     <Link href={"/"}>Home</Link>
+    <Link href={"/about"}>About</Link>
     <Link href={"./blog"}>Blog</Link>
-    <Link href={"./blog"}>Donate</Link>
+    <Link href={"./donate"}>Donate</Link>
     <Link href={"./lab"}>Lab</Link>
     <Link href={"./contact"}>Contact</Link>
   </div>

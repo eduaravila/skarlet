@@ -1,0 +1,9 @@
+
+<script>
+  import Title from "../components/Title/Title.svelte";
+</script>
+
+<Title />
+
+
+# Geres is a 

@@ -55,8 +55,6 @@
 <style>
   .text {
     font-size: 0.5rem;
-    font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Lucida Console",
-      "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
-      "Courier New", monospace, sans-serif;
+    
   }
 </style>

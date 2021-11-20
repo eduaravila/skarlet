@@ -40,6 +40,7 @@ module.exports = {
   plugins: [],
   corePlugin: {
     preflight: true,
+    transform:true
   },
   future: {
     purgeLayersByDefault: true,

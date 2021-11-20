@@ -1,7 +1,7 @@
 <script>
   import { metatags,page } from "@roxi/routify";
   import { TabsTransition } from "@roxi/routify/decorators";
-  import anime from "animejs/lib/anime.es.js";
+  import Loading from "../components/Loading/Loading.svelte";
   import Nav from "../components/Nav/Nav.svelte";
   import { getTitle,is404 } from "../utils/page";
   /**
@@ -9,7 +9,7 @@
    * depending the page
    */
   $: currentRouteTitle = getTitle($page);
-  const _is404 = is404($page);
+  $: _is404 = is404($page);
   $: metatags.title = currentRouteTitle;
 
   if (
@@ -21,33 +21,9 @@
   } else {
     document.documentElement.classList.remove("dark");
   }
-
-  const transition = () => {
-    anime({
-      targets: ".loading-screen",
-      width: "100%", // -> from '28px' to '100%',
-      left: "0%",
-      easing: "easeInOutQuad",
-      direction: "alternate",
-      loop: false,
-    });
-
-    anime({
-      targets: ".loading-screen",
-      width: "100%", // -> from '28px' to '100%',
-      left: "100%",
-      easing: "easeInOutQuad",
-      direction: "alternate",
-      loop: false,
-    });
-  };
 </script>
 
-<div
-  class="loading-container fixed top-0 w-full h-screen overflow-hidden z-10 pointer-events-none"
->
-  <div class="loading-screen relative p-0 w-0 h-full" />
-</div>
+<Loading />
 
 <header><Nav /></header>
 

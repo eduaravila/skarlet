@@ -22,13 +22,14 @@
   }
 
   body {
-    font-family: Monserrat, sans-serif !important;
+    font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Lucida Console",
+      "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+      "Courier New", monospace, sans-serif !important;
   }
 
   @tailwind utilities;
 
   main.inset {
     bottom: 64px;
-    overflow: hidden;
   }
 </style>

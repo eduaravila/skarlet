@@ -1,9 +1,5 @@
 <script>
-  import { metatags } from "@roxi/routify";
-
-  metatags.description = "Description coming soon...";
-
- 
+  import Title from "../components/Nav/Title/Title.svelte";
 </script>
 
-<h1>Hometesrtesrtesr</h1>
+<Title />

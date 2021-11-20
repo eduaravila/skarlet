@@ -18,6 +18,7 @@ p-8
   <div class="flex justify-center space-x-10 mt-4 mx:space-x-1">
     <Link href={"/"}>Home</Link>
     <Link href={"./blog"}>Blog</Link>
+    <Link href={"./blog"}>Donate</Link>
     <Link href={"./lab"}>Lab</Link>
     <Link href={"./contact"}>Contact</Link>
   </div>

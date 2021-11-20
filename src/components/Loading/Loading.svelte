@@ -43,8 +43,7 @@
   };
 
   $: {
-    console.log(completed);
-    if ($isChangingPage || !completed) {
+    if (!completed) {
       completed = false;
       loadingAnimation();
       transition.in();

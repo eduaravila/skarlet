@@ -1,6 +1,7 @@
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
+import { mdsvex } from "mdsvex";
 import css from "rollup-plugin-css-only";
 import livereload from "rollup-plugin-livereload";
 import svelte from "rollup-plugin-svelte";
@@ -44,12 +45,16 @@ export default {
   },
   plugins: [
     svelte({
-      preprocess: sveltePreprocess({
-        sourceMap: !production,
-        postcss: {
-          plugins: [require("tailwindcss"), require("autoprefixer")()],
-        },
-      }),
+      extensions: [".svelte", ".svx"],
+      preprocess: [
+        sveltePreprocess({
+          sourceMap: !production,
+          postcss: {
+            plugins: [require("tailwindcss"), require("autoprefixer")()],
+          },
+        }),
+        mdsvex(),
+      ],
       compilerOptions: {
         // enable run-time checks when not in production
         dev: !production,

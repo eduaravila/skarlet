@@ -9,9 +9,20 @@
 <Router {routes} />
 
 <svelte:head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
-  </style>
+  <style></style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-G4FYKL4YKV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-G4FYKL4YKV");
+  </script>
 </svelte:head>
 
 <style global lang="postcss">

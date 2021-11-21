@@ -1,10 +1,9 @@
 ---
-title: software and stuff
+title: Hi I'm Eduardo
 layout: article
 date: 20 Nov 2021
 author: Eduardo Avila
 ---
-
 
 My personal blog of tech and life.
 

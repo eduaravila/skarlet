@@ -1,0 +1,34 @@
+---
+title: blog
+layout: article
+author: Eduardo Avila
+---
+
+<script>
+  import { operationStore,query } from "@urql/svelte";
+  import Article from "../../components/Blog";
+
+  const projects = operationStore(`
+  query {
+  huevioRevueltosCollection{
+    items{
+      title
+      autor
+      createdAt
+      description
+      timeToRead
+      slug
+      autorPage
+    }
+  }
+}
+  `);
+
+  query(projects);
+
+  $: items = $projects?.data?.huevioRevueltosCollection?.items ?? [];
+</script>
+
+{#each items as article}
+  <Article {...article} />
+{/each}

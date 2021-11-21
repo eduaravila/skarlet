@@ -22,9 +22,11 @@
     {/each}
   </ul>
 
-  <img
-    class="object-contain md:object-scale-down h-48 w-full mt-2"
-    alt={portrait.title}
-    src={portrait.url}
-  />
+  {#if portrait}
+    <img
+      class="object-cover md:object-cover h-48 w-full mt-2"
+      alt={portrait.title}
+      src={portrait.url}
+    />
+  {/if}
 </div>

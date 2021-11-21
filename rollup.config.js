@@ -14,6 +14,7 @@ const production = !process.env.ROLLUP_WATCH;
 const CONTENFUL_SPACE = process.env.CONTENFUL_SPACE;
 const CONTENFUL_ENVIRONMENT = process.env.CONTENFUL_ENVIRONMENT;
 const CONTENFUL_ACCESS_TOKEN = process.env.CONTENFUL_ACCESS_TOKEN;
+const BLOG_URL = process.env.BLOG_URL;
 function serve() {
   let server;
 
@@ -111,6 +112,9 @@ export default {
       ),
       "process.env.CONTENFUL_ACCESS_TOKEN": JSON.stringify(
         CONTENFUL_ACCESS_TOKEN
+      ),
+      "process.env.BLOG_URL": JSON.stringify(
+        BLOG_URL
       ),
 
       preventAssignment: true,

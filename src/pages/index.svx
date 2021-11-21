@@ -6,3 +6,33 @@ author: Eduardo Avila
 ---
 
 # Hey there check out the latest.
+
+<script>
+  import { operationStore,query } from "@urql/svelte";
+  import Article from "../components/Blog/Blog.svelte";
+
+  const projects = operationStore(`
+  query {
+  huevioRevueltosCollection(limit:3){
+    items{
+      title
+      autor
+      createdAt
+      description
+      timeToRead
+      slug
+      autorPage
+    }
+  }
+}
+  `);
+
+  query(projects);
+
+  $: items = $projects?.data?.huevioRevueltosCollection?.items ?? [];
+</script>
+
+{#each items as article}
+
+  <Article {...article} />
+{/each}

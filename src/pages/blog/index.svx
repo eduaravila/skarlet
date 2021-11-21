@@ -1,9 +1,3 @@
----
-title: blog
-layout: article
-author: Eduardo Avila
----
-
 <script>
   import { operationStore,query } from "@urql/svelte";
   import Article from "../../components/Blog/Blog.svelte";
@@ -28,6 +22,8 @@ author: Eduardo Avila
 
   $: items = $projects?.data?.huevioRevueltosCollection?.items ?? [];
 </script>
+
+--- title: blog layout: article author: Eduardo Avila ---
 
 {#each items as article}
   <Article {...article} />

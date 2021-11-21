@@ -36,7 +36,9 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "graphql": "^16.0.1",
     "sirv-cli": "^1.0.0",
+    "urql": "^2.0.5",
     "yarn-run-all": "^3.1.1"
   }
 }

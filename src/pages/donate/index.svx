@@ -1,5 +1,5 @@
 ---
-title: Buy me a coffe
+title: buy me a coffe
 layout: article
 date: 20 Nov 2021
 author: Eduardo Avila

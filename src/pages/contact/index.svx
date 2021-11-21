@@ -1,5 +1,5 @@
 ---
-title: Contact Eduardo Avila
+title: contact Eduardo Avila
 layout: article
 date: 20 Nov 2021
 author: Eduardo Avila

@@ -1,0 +1,15 @@
+---
+title: projects and resources
+layout: article
+date: false
+author: Eduardo Avila
+---
+
+<script> 
+  
+  import Resource from "../../components/Resource/Resource.svelte";
+</script>
+
+<Resource title={project.title}>
+
+</Resource>

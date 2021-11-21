@@ -56,6 +56,7 @@ export default {
         mdsvex({
           layout: {
             article: "/src/layouts/article.svelte",
+            page: "/src/layouts/page.svelte",
           },
         }),
       ],

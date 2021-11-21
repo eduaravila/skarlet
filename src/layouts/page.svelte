@@ -14,12 +14,6 @@
 <div>
   <div class="mb-4 container">
     <Title>{title}</Title>
-    <div class="flex flex-col md:flex-row md:space-x-2">
-      {#if date}
-        <p class="date italic">on: {date}</p>
-      {/if}
-      <p class="date italic">by: {author}</p>
-    </div>
   </div>
   <slot>
     <!-- the mdsvex content will be slotted in here -->

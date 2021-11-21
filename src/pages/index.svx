@@ -1,9 +1,8 @@
+---
+title: welcome
+layout: page
+date: 20 Nov 2021
+author: Eduardo Avila
+---
 
-<script>
-  import Title from "../components/Title/Title.svelte";
-</script>
-
-<Title />
-
-
-# Geres is a 
+# Hey there check out the latest.

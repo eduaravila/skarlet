@@ -5,7 +5,7 @@ date: 20 Nov 2021
 author: Eduardo Avila
 ---
 
-# Hey there check out the latest.
+# hey there check out the latest.
 
 <script>
   import { operationStore,query } from "@urql/svelte";

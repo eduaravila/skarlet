@@ -17,7 +17,7 @@
   $: articleURL = process.env.BLOG_URL + slug;
 </script>
 
-<div class="mt-4 border-b-2 border-gray-500">
+<div class="mt-4 border-b-2 border-gray-500 pb-4">
   <a href={articleURL} target="_blank"
     ><p
       class="text-3xl md:text-2xl font-bold w-auto inline-block

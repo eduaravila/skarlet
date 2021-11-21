@@ -8,8 +8,9 @@
   bg-secondary-dark
   dark:bg-secondary-light
 container
-lg:w-5/6
-sm:mx-auto
+w-full
+md:w-9/12
+md:mx-auto
 self-center
 p-8
 "

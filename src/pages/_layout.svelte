@@ -23,26 +23,25 @@
 </script>
 
 <!-- <Loading /> -->
+<header><Nav /></header>
 
 <main
   class="inset container mx-auto
 md:mx-auto"
 >
-  <header><Nav /></header>
-
   {#if !_is404}
     <div
       class="w-full
     container
-  md:mx-auto grid grid-cols-6 gap-0 self-center"
+  md:w-10/12 m-auto grid grid-cols-6 gap-0 self-center break-word"
     >
       <div
-        class="bg-gray-300 mt-4 m-4 mb-0 md:m-0 md:mt-8  p-8 col-span-6 md:col-span-4"
+        class="bg-gray-300 mt-4 m-4 mb-0 md:m-0 md:mt-8 p-3 md:p-8 col-span-6 md:col-span-5"
       >
         <slot decorator={TabsTransition} />
       </div>
       <div
-        class="bg-gray-300 mt-4 m-4 md:m-0 md:mt-8  p-8 col-span-6 md:col-span-2"
+        class="bg-gray-300 mt-4 m-4 md:m-0 md:mt-8  p-8 col-span-6 md:col-span-1"
       />
     </div>
   {:else}

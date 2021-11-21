@@ -1,19 +1,24 @@
 <script>
   import { url } from "@roxi/routify";
   import Image404 from "../components/404/Image404.svelte";
+  import Title from "../components/Title/Title.svelte";
 </script>
 
-<div class="flex justify-center flex-col items-center ">
-  <h1 class="text-7xl mt-8 bg-gray-100 p-2 rounded-sm">404</h1>
-  <Image404 />
-  <div class="text-center text-3xl mt-8 error-text isolate">
-    Page not found.
-    <!-- link to the parent folder of _fallback.svelte -->
-    <a
-      href={$url("../")}
-      class="underline focus:outline-white bg-gray-100 p-2 rounded-sm"
-      >Go back</a
-    >
+<div class="w-full md:w-9/12 m-auto">
+  <div class="flex justify-center flex-col items-center">
+    <Title>404</Title>
+    <Image404 />
+    <div class="mt-8 error-text flex flex-col items-center md:flex-row">
+      <p class="text-primary-light text-3xl dark:text-gray-50">
+        Page not found.
+      </p>
+      <!-- link to the parent folder of _fallback.svelte -->
+      <a
+        href={$url("../")}
+        class="underline focus:outline-white bg-gray-100 p-2 rounded-sm text-3xl mt-2 md:mt-0"
+        >Go back</a
+      >
+    </div>
   </div>
 </div>
 

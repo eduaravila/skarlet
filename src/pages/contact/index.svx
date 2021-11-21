@@ -1,0 +1,14 @@
+---
+title: Contact Eduardo Avila
+layout: article
+date: 20 Nov 2021
+author: Eduardo Avila
+---
+
+You can contact me via
+
+- Email: business@eduaravila.com
+- GitHub: https://github.com/YOURMATADOR
+- LinkedIn: https://www.linkedin.com/in/eduaravila
+- Medium: https://medium.com/@meguminmegumin
+

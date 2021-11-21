@@ -27,10 +27,12 @@ module.exports = {
           light: "#ce5065",
         },
       },
-    },
-    extend: {
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        tiny: ".5rem",
+        super_tiny: ".2rem",
       },
     },
   },
@@ -40,7 +42,7 @@ module.exports = {
   plugins: [],
   corePlugin: {
     preflight: true,
-    transform:true
+    transform: true,
   },
   future: {
     purgeLayersByDefault: true,

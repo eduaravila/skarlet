@@ -1,9 +1,9 @@
 <div
-  class="rounded-full flex items-center justify-center box-border overflow-hidden mt-9"
+  class="flex items-center justify-center box-border overflow-hidden mt-9 w-full"
 >
   <div>
     <pre
-      class="text select-none text-primary-light dark:text-gray-100">
+      class="text-super_tiny md:text-tiny select-none text-primary-light dark:text-gray-100">
     ░░░░░░░░░░░░░░░░▒▒░░░░░░                    ░░░░  ░░  ░░░░░░░░  ░░    ░░    ▓▓▓▓▓▓░░    ░░░░▓▓▓▓░░░░                  ░░            ░░░░░░░░    ░░▒▒░░░░░░
 ▒▒░░░░░░  ░░░░░░░░░░░░░░░░                  ░░  ░░░░    ░░░░░░        ░░  ░░▓▓▓▓▓▓▓▓▒▒░░░░▓▓▓▓▓▓░░░░                ░░            ░░░░  ░░    ░░  ░░░░    
   ░░░░░░░░  ░░░░░░░░░░░░░░░░                    ░░  ░░  ░░░░░░    ░░  ░░  ░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░                          ░░░░░░░░  ░░░░  ░░░░    ░░
@@ -51,10 +51,3 @@
 </pre>
   </div>
 </div>
-
-<style>
-  .text {
-    font-size: 0.5rem;
-    
-  }
-</style>

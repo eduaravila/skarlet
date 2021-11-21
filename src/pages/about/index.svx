@@ -9,5 +9,3 @@ author: Eduardo Avila
 My personal blog of tech and life.
 
 Mainly about web development and mobile development, probably another topics would sneak in.
-
-

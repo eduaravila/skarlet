@@ -14,6 +14,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-replace": "^3.0.0",
     "@rollup/plugin-typescript": "^8.0.0",
     "@roxi/routify": "^2.18.3",
     "@tsconfig/svelte": "^2.0.1",
@@ -39,7 +40,6 @@
     "express": "^4.17.1",
     "graphql": "^16.0.1",
     "sirv-cli": "^1.0.0",
-    "urql": "^2.0.5",
     "yarn-run-all": "^3.1.1"
   }
 }

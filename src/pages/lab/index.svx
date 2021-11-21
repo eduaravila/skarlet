@@ -1,15 +1,39 @@
 ---
-title: projects and resources
+title: Resources
 layout: article
-date: false
 author: Eduardo Avila
 ---
 
-<script> 
-  
+<script>
+  import { operationStore,query } from "@urql/svelte";
   import Resource from "../../components/Resource/Resource.svelte";
+
+  const projects = operationStore(`
+  query {
+  resoursesCollection{
+    items{
+      title
+      at
+      links
+      portrait{
+        title
+        url
+        
+      }
+      id
+      points
+      metadata
+    }
+  }
+}
+  `);
+
+  query(projects);
+
+  $: items = $projects?.data?.resoursesCollection?.items ?? [];
+  
 </script>
 
-<Resource title={project.title}>
-
-</Resource>
+{#each items as project}
+  <Resource {...project} />
+{/each}

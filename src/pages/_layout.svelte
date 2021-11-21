@@ -4,6 +4,7 @@
   import Footer from "../components/Footer/Footer.svelte";
   import Nav from "../components/Nav/Nav.svelte";
   import { getTitle,is404 } from "../utils/page";
+
   /**
    * Dynamic prop to get the current title
    * depending the page

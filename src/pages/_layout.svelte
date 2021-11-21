@@ -2,6 +2,7 @@
   import { metatags,page } from "@roxi/routify";
   import { TabsTransition } from "@roxi/routify/decorators";
   import Footer from "../components/Footer/Footer.svelte";
+  import Loading from "../components/Loading/Loading.svelte";
   import Nav from "../components/Nav/Nav.svelte";
   import { getTitle,is404 } from "../utils/page";
 
@@ -24,7 +25,7 @@
   }
 </script>
 
-<!-- <Loading /> -->
+<Loading />
 <header><Nav /></header>
 
 <main

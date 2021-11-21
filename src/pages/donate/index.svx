@@ -1,0 +1,18 @@
+---
+title: Buy me a coffe
+layout: article
+date: 20 Nov 2021
+author: Eduardo Avila
+---
+
+Donations enable me to dedicate more time to blogging about JavaScript, web development and other topics.
+
+Thank you for your support!
+
+Eduardo, Cheers!
+
+&nbsp;
+
+# You can donate in various methods
+
+- [Paypal](https://www.paypal.com/donate/?hosted_button_id=NAC2KBHTZGQS4)

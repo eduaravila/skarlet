@@ -1,6 +1,7 @@
 <script>
   import { metatags,page } from "@roxi/routify";
   import { TabsTransition } from "@roxi/routify/decorators";
+  import Footer from "../components/Footer/Footer.svelte";
   import Nav from "../components/Nav/Nav.svelte";
   import { getTitle,is404 } from "../utils/page";
   /**
@@ -48,3 +49,4 @@ md:mx-auto"
     <slot decorator={TabsTransition} />
   {/if}
 </main>
+<Footer />

@@ -25,6 +25,8 @@
     font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Lucida Console",
       "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
       "Courier New", monospace, sans-serif !important;
+    position: unset;
+    margin-bottom: 6rem !important;
   }
   a {
     color: rgb(0, 100, 200);
@@ -42,5 +44,10 @@
 
   main.inset {
     bottom: 64px;
+  }
+  html {
+    position: relative !important;
+    min-height: 100%;
+    height: unset !important;
   }
 </style>

@@ -26,7 +26,18 @@
       "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
       "Courier New", monospace, sans-serif !important;
   }
-
+  a {
+    color: rgb(0, 100, 200);
+  }
+  @layer base {
+    ul,
+    ol,
+    li {
+      list-style: revert;
+      margin: auto;
+      padding: revert;
+    }
+  }
   @tailwind utilities;
 
   main.inset {

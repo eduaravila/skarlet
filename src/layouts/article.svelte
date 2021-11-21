@@ -13,7 +13,7 @@
 <div>
   <div class="mb-4 container">
     <Title>{title}</Title>
-    <div class="flex flex-col md:flex-col">
+    <div class="flex flex-col md:flex-row md:space-x-2">
       <p class="date italic">on: {date}</p>
       <p class="date italic">by: {author}</p>
     </div>

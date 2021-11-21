@@ -6,7 +6,7 @@ author: Eduardo Avila
 
 <script>
   import { operationStore,query } from "@urql/svelte";
-  import Article from "../../components/Blog";
+  import Article from "../../components/Blog/Blog.svelte";
 
   const projects = operationStore(`
   query {

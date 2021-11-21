@@ -8,3 +8,7 @@ services:
       - "35729:35729" 
     volumes:
       - ./:/usr/src/app
+    environment:
+      - CONTENFUL_SPACE=${CONTENFUL_SPACE}
+      - CONTENFUL_ENVIRONMENT=${CONTENFUL_ENVIRONMENT}
+      - CONTENFUL_ACCESS_TOKEN=${CONTENFUL_ACCESS_TOKEN}

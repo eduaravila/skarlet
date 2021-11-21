@@ -14,3 +14,5 @@
 .routify
 
 dist
+
+.env

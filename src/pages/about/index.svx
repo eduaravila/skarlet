@@ -1,5 +1,5 @@
 ---
-title: Hi I'm Eduardo
+title: hi I'm Eduardo
 layout: article
 date: 20 Nov 2021
 author: Eduardo Avila

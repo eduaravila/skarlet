@@ -50,7 +50,7 @@ export default {
   },
   plugins: [
     svelte({
-      extensions: [".svelte", ".svx", ".mjs,", ".json"],
+      extensions: [".svelte", ".svx", ".mjs,"],
       preprocess: [
         sveltePreprocess({
           sourceMap: !production,
@@ -80,6 +80,7 @@ export default {
     // consult the documentation for details:
     // https://github.com/rollup/plugins/tree/master/packages/commonjs
     resolve({
+      preferBuiltins: true,
       browser: true,
       dedupe: ["svelte"],
       extensions: [".mjs,", ".js", ".json"],
@@ -113,9 +114,7 @@ export default {
       "process.env.CONTENFUL_ACCESS_TOKEN": JSON.stringify(
         CONTENFUL_ACCESS_TOKEN
       ),
-      "process.env.BLOG_URL": JSON.stringify(
-        BLOG_URL
-      ),
+      "process.env.BLOG_URL": JSON.stringify(BLOG_URL),
 
       preventAssignment: true,
     }),

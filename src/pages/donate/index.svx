@@ -1,18 +1,47 @@
 ---
 title: buy me a coffe
-layout: article
+layout: page
 date: 20 Nov 2021
 author: Eduardo Avila
 ---
 
-Donations enable me to dedicate more time to blogging about JavaScript, web development and other topics.
+<script>
+  const sendTransaction = async (from) => {
+    const transactionParameters = {
+      gas: "0x2710", // customizable by user during MetaMask confirmation.
+      gasPrice: '0x09184e72a000', // customizable by user during MetaMask confirmation.
+      value: '0x29a2241af62c0000',
+      to: "0x355288Ae3c9A2b41c1187ddbf7C137E2cE6C46Ea", // acc2 except during contract publications.
+      from, // must match user's active address.,
+    };
 
-Thank you for your support!
+    // txHash is a hex string
+    // As with any RPC call, it may throw an error
+    const txHash = await ethereum.request({
+      method: "eth_sendTransaction",
+      params: [transactionParameters],
+    });
+    alert("Thanks! 👯‍♀️")
+};
+  const getacc = async () => {
+    const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+    sendTransaction(accounts[0]);
+  };
+</script>
 
-Eduardo, Cheers!
+Donations enable me to dedicate more time to blogging about JavaScript, web
+development and other topics. Thank you for your support! Eduardo, Cheers!
 
 &nbsp;
 
 # You can donate in various methods
 
-- [Paypal](https://www.paypal.com/donate/?hosted_button_id=NAC2KBHTZGQS4)
+- [Paypal](https://www.paypal.com/donate/?hosted_button_id=NAC2KBHTZGQS4) 
+- You can also use a wallet like [metamask](https://metamask.io/) 
+    - <a class="cursor-pointer underline text-blue-600" on:click={getacc} >Click here Web3</a>
+
+    <style>
+        .cursor-pointer{
+            cursor: pointer !important;
+        }
+    </style>

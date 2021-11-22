@@ -1,6 +1,6 @@
 <script>
   import { metatags,page } from "@roxi/routify";
-  import { TabsTransition } from "@roxi/routify/decorators";
+  import { BaseTransition } from "@roxi/routify/decorators";
   import Footer from "../components/Footer/Footer.svelte";
   import Loading from "../components/Loading/Loading.svelte";
   import Nav from "../components/Nav/Nav.svelte";
@@ -41,14 +41,14 @@ md:mx-auto"
       <div
         class="bg-gray-300 mt-4 m-4 mb-0 md:m-0 md:mt-8 p-3 md:p-8 col-span-6 md:col-span-5"
       >
-        <slot decorator={TabsTransition} />
+        <slot decorator={BaseTransition} />
       </div>
       <div
         class="bg-gray-300 mt-4 m-4 md:m-0 md:mt-8  p-8 col-span-6 md:col-span-1"
       />
     </div>
   {:else}
-    <slot decorator={TabsTransition} />
+    <slot decorator={BaseTransition} />
   {/if}
 </main>
 <Footer />

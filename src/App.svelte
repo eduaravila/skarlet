@@ -30,13 +30,11 @@
   @tailwind components;
 
   @font-face {
-    font-family: "Monserrat";
-    src: local("Monserrat"),
-      url("/assets/Monserrat/Montserrat-Black.ttf") format("ttf");
+    @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
   }
 
   body {
-    font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Lucida Console",
+    font-family: Menlo, "Source Code Pro", Monaco, "Lucida Console",
       "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
       "Courier New", monospace, sans-serif !important;
     position: unset;

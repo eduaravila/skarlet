@@ -16,7 +16,7 @@
     <Title>{title}</Title>
     <div class="flex flex-col md:flex-row md:space-x-2">
       {#if date}
-        <p class="date italic">on: {date}</p>
+        <p class="date italic">{date}</p>
       {/if}
       <p class="date italic">by: {author}</p>
     </div>

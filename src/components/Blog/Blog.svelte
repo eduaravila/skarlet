@@ -11,9 +11,11 @@
     year: "numeric",
     month: "long",
     day: "numeric",
+    hour: undefined,
+    minute: undefined,
   };
 
-  $: date = new Date(createdAt).toLocaleString(options);
+  $: date = new Date(createdAt).toLocaleString("en-US", options);
   $: articleURL = process.env.BLOG_URL + slug;
 </script>
 

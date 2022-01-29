@@ -43,7 +43,7 @@ md:mx-auto"
         <slot decorator={BaseTransition} />
       </div>
       <div
-        class="bg-gray-300 mt-4 m-4 md:m-0 md:mt-8  p-8 col-span-6 md:col-span-1"
+        class="bg-gray-300 mt-4 m-4 md:m-0 md:mt-8 p-8 col-span-6 hidden md:col-span-1"
       />
     </div>
   {:else}

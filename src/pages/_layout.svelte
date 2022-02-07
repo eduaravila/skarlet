@@ -38,7 +38,7 @@ md:mx-auto"
   md:w-10/12 m-auto grid grid-cols-6 gap-0 self-center break-word"
     >
       <div
-        class="bg-gray-300 mt-4 m-4 mb-0 md:m-0 md:mt-8 p-3 md:p-8 col-span-6 md:col-span-5"
+        class="bg-gray-300 mt-4 m-4 mb-0 md:m-0 md:mt-8 p-3 md:p-8 col-span-6 md:col-span-6"
       >
         <slot decorator={BaseTransition} />
       </div>

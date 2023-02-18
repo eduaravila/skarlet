@@ -19,7 +19,7 @@ p-8
   <LogoText />
   <div class="flex justify-center flex-col md:flex-row md:space-x-16 lg:flex-row mt-4 ">
     <Link href={"/"}>home</Link>    
-    <Link href={"./lab"}>stuff i have done</Link>
+    <Link href={"./stuff"}>stuff i have done</Link>
     <Link href={blogUrl}>blog</Link>
   </div>
 </nav>

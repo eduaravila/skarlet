@@ -10,13 +10,3 @@ COPY . .
 RUN yarn set version berry
 
 RUN yarn
-
-ENV PORT=8080
-ENV PORT_SERVER=8081
-
-ENV HOST=0.0.0.0
-EXPOSE 8080 8081 8545
- 
-# VOLUME ["/usr/src/app"]
-
-CMD ["npm","run","dev"]

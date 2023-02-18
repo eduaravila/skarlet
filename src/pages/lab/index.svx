@@ -1,5 +1,5 @@
 ---
-title: resources
+title: projects, apps, and tools.
 layout: article
 author: Eduardo Avila
 ---

@@ -1,6 +1,7 @@
 <script>
   import Link from "./Link.svelte";
   import LogoText from "./LogoText.svelte";
+  $: blogUrl = process.env.BLOG_URL;
 </script>
 
 <nav
@@ -17,11 +18,8 @@ p-8
 >
   <LogoText />
   <div class="flex justify-center flex-col md:flex-row md:space-x-16 lg:flex-row mt-4 ">
-    <Link href={"/"}>home</Link>
-    <Link href={"/about"}>about</Link>
-    <Link href={"./blog"}>blog</Link>
-    <Link href={"./donate"}>donate</Link>
-    <Link href={"./lab"}>lab</Link>
-    <Link href={"./contact"}>contact</Link>
+    <Link href={"/"}>home</Link>    
+    <Link href={"./lab"}>stuff i have done</Link>
+    <Link href={blogUrl}>blog</Link>
   </div>
 </nav>

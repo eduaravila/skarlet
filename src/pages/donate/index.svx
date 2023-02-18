@@ -38,7 +38,7 @@ development and other topics. Thank you for your support! Eduardo, Cheers!
 
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=NAC2KBHTZGQS4) 
 - You can also use a wallet like [metamask](https://metamask.io/) 
-    - <a class="cursor-pointer underline text-blue-600" on:click={getacc} >Click here Web3</a>
+    - <p class="cursor-pointer underline text-blue-600" on:click={getacc} >Click here Web3</p>
     - or this address *0x355288Ae3c9A2b41c1187ddbf7C137E2cE6C46Ea*
     <style>
         .cursor-pointer{

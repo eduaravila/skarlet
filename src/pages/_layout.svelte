@@ -1,10 +1,10 @@
 <script>
-  import { metatags,page } from "@roxi/routify";
+  import { metatags, page } from "@roxi/routify";
   import { BaseTransition } from "@roxi/routify/decorators";
   import Footer from "../components/Footer/Footer.svelte";
   import Nav from "../components/Nav/Nav.svelte";
-  import { getTitle,is404 } from "../utils/page";
-
+  import { getTitle, is404 } from "../utils/page";
+  
   /**
    * Dynamic prop to get the current title
    * depending the page
@@ -22,6 +22,7 @@
   } else {
     document.documentElement.classList.remove("dark");
   }
+  
 </script>
 
 <!-- <Loading /> -->
@@ -31,6 +32,7 @@
   class="inset container mx-auto
 md:mx-auto"
 >
+
   {#if !_is404}
     <div
       class="w-full

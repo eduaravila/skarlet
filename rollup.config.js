@@ -15,6 +15,8 @@ const CONTENFUL_SPACE = process.env.CONTENFUL_SPACE;
 const CONTENFUL_ENVIRONMENT = process.env.CONTENFUL_ENVIRONMENT;
 const CONTENFUL_ACCESS_TOKEN = process.env.CONTENFUL_ACCESS_TOKEN;
 const BLOG_URL = process.env.BLOG_URL;
+const SITE = process.env.SITE;
+
 function serve() {
   let server;
 
@@ -115,6 +117,8 @@ export default {
         CONTENFUL_ACCESS_TOKEN
       ),
       "process.env.BLOG_URL": JSON.stringify(BLOG_URL),
+      "process.env.SITE": JSON.stringify(SITE),
+
 
       preventAssignment: true,
     }),

@@ -2,14 +2,10 @@ version: "3.9"
 services:
   web:
     build: .
-    ports: 
-      - "8080:8080"
-      - "8081:8081"
-      - "35729:35729" 
+    ports:       
+      - "5000:8080"      
     volumes:
       - ./:/usr/src/app
-    environment:
-      - CONTENFUL_SPACE=${CONTENFUL_SPACE}
-      - CONTENFUL_ENVIRONMENT=${CONTENFUL_ENVIRONMENT}
-      - CONTENFUL_ACCESS_TOKEN=${CONTENFUL_ACCESS_TOKEN}
-      - BLOG_URL=${BLOG_URL}
+    env_file:
+      - .env
+    command: sh -c "yarn dev" 

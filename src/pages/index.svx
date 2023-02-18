@@ -1,27 +1,20 @@
 ---
-title: welcome
+title: Hello World
 layout: page
 date: 20 Nov 2021
 author: Eduardo Avila
 ---
 
-# hey there check out the latest.
-
 <script>
   import { operationStore,query } from "@urql/svelte";
   import Article from "../components/Blog/Blog.svelte";
-
+  
   const projects = operationStore(`
   query {
-  huevioRevueltosCollection(limit:3){
+  socialsCollection{
     items{
-      title
-      autor
-      createdAt
-      description
-      timeToRead
-      slug
-      autorPage
+      url
+      urlname
     }
   }
 }
@@ -29,10 +22,33 @@ author: Eduardo Avila
 
   query(projects);
 
-  $: items = $projects?.data?.huevioRevueltosCollection?.items ?? [];
+  $: items = $projects?.data?.socialsCollection?.items ?? [];
+
+
 </script>
 
-{#each items as article}
+<img src="/yo.jpeg" alt="Avatar" style="border-radius: 50%; width: 100px; height: 100px; margin-bottom: 1rem;" >
 
-  <Article {...article} />
+I'm Software engineer, who enjoys writing a variety of topics, 
+Iot, web development, mobile development, and other topics that I find interesting.
+
+<br>
+<br>
+
+Technologies I use:
+- golang
+- python
+- typescript
+- react
+- react Native
+- postgesql
+
+<br>
+<br>
+Follow Me Online Here:
+
+<ul>
+{#each items as socialLink}
+  <li><a href={socialLink.url}>{socialLink.urlname}</a></li>
 {/each}
+</ul>

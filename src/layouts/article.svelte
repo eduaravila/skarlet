@@ -2,7 +2,7 @@
   import h1 from "../components/H1/H1.svelte";
   import Title from "../components/Title/Title.svelte";
   import ul from "../components/Ul/Ul.svelte";
-  export { ul,h1 };
+  export { ul, h1 };
 </script>
 
 <script>
@@ -18,7 +18,7 @@
       {#if date}
         <p class="date italic">{date}</p>
       {/if}
-      <p class="date italic">by: {author}</p>
+      
     </div>
   </div>
   <slot>

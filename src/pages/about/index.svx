@@ -5,6 +5,3 @@ date: 20 Nov 2021
 author: Eduardo Avila
 ---
 
-personal blog of tech and life.
-
-> mainly about web development and mobile development, probably another topics would sneak in.

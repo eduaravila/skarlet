@@ -19,9 +19,9 @@ const projects = operationStore(`
 </script>
 
 <footer
-  class="footer absolute bottom-0 p-4 h-18	w-full border-b-2 border-green-400 text-primary-light dark:text-gray-50 text-center"
+  class="footer bottom-0 p-4 h-18	w-full border-b-2 border-green-400 text-primary-light dark:text-gray-50 text-center my-5"
 >
-  <div class="flex gap-2 justify-center">
+  <div class="flex gap-2 justify-center flex-col sm:flex-row my-5">
   {#each items as socialLink}
     <div >
       <a href={socialLink.url} target="_blank" rel="noopener noreferrer" class="underline text-primary-light dark:text-gray-50">

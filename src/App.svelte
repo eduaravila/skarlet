@@ -59,9 +59,5 @@
   main.inset {
     bottom: 64px;
   }
-  html {
-    position: relative !important;
-    min-height: 100%;
-    height: unset !important;
-  }
+  
 </style>

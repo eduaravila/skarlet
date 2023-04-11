@@ -7,7 +7,7 @@
     "dev:rollup": "rollup -c -w",
     "dev:routify": "routify",
     "build": "routify -b && rollup -c",
-    "start": "sirv public --no-clear -s",
+    "start": "sirv public --no-clear -s --host",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "serve": "node server.js"
   },

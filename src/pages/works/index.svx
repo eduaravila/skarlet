@@ -34,6 +34,9 @@ author: Eduardo Avila
   
 </script>
 
+<div class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-5">
 {#each items as project}
   <Resource {...project} />
 {/each}
+
+</div>

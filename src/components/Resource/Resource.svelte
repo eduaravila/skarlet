@@ -7,26 +7,28 @@
   $: mainLink = links?.[0] ?? null;
 </script>
 
-<div class="mt-4">
-  <a href={mainLink} target="_blank"
+<div class="mt-4 flex flex-col">
+  <a href={mainLink} target="_blank" class="text-left"
     ><p
-      class="text-3xl md:text-2xl font-bold w-auto inline-block
+      class="text-left text-3xl md:text-2xl font-bold w-auto inline-block
   mb-2 break-words"
     >
       {title}
     </p>
   </a>
-  <ul>
-    {#each points as point}
-      <li>{point}</li>
-    {/each}
-  </ul>
+  <div>
+    <div class="flex-auto text-clip text-ellipsis overflow-hidden h-24">
+      {#each points as point}
+        <p class="text-ellipsis overflow-hidden text-justify">{point}</p>
+      {/each}
+    </div>
+  </div>
 
-  {#if portrait}
+  <!-- {#if portrait}
     <img
-      class="object-cover md:object-cover h-48 w-full mt-2"
+      class="object-cover md:object-cover h-10 w-full mt-2 flex-1"
       alt={portrait.title}
       src={portrait.url}
     />
-  {/if}
+  {/if} -->
 </div>

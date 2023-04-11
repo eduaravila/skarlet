@@ -28,7 +28,11 @@
 <style global lang="postcss">
   @tailwind base;
   @tailwind components;
-
+  @tailwind utilities;
+  
+  a {
+    @apply underline text-blue-600 hover:text-blue-800
+  }
   @font-face {
     @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
   }
@@ -40,9 +44,7 @@
     position: unset;
     margin-bottom: 6rem !important;
   }
-  a {
-    color: rgb(0, 100, 200);
-  }
+  
   @layer base {
     ul,
     ol,

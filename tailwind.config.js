@@ -7,6 +7,7 @@ module.exports = {
       "./src/**/*.svelte",
       // may also want to include HTML files
       "./src/**/*.html",
+      "./src/**/*.svx",
     ],
     enabled: production, // disable purge in dev
   },

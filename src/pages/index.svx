@@ -35,13 +35,24 @@ Iot, web development, mobile development, and other topics that I find interesti
 <br>
 <br>
 
-Technologies I use:
+<p class="text-lg bold">Technologies:</p>
+
 - golang
 - python
 - typescript
 - react
 - react Native
-- postgesql
+- postgresql
+
+<br>
+<br>
+
+<p class="text-lg bold">Languages:</p>
+<ul>
+  <li>Spanish (native) </li>
+  <li>English (business) </li>
+  <li>Japanese (noob like below N5) </li>
+</ul>
 
 <br>
 <br>

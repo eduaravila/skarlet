@@ -17,9 +17,9 @@
     </p>
   </a>
   <div>
-    <div class="flex-auto text-clip text-ellipsis overflow-hidden h-24">
+    <div class="flex-auto h-16">
       {#each points as point}
-        <p class="text-ellipsis overflow-hidden text-justify">{point}</p>
+        <p class="text-justify line-clamp-3 ">{point}</p>
       {/each}
     </div>
   </div>

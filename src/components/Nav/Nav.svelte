@@ -18,8 +18,9 @@ p-8
 >
   <LogoText />
   <div class="flex justify-center flex-col md:flex-row md:space-x-16 lg:flex-row mt-4 ">
-    <Link href={"/"}>home</Link>    
-    <Link href={"works"}>projects</Link>
+    <Link href={"/"}>about</Link>    
+    <Link href={"portfolio"}>portfolio</Link>
     <Link href={blogUrl}>blog</Link>
+    <Link target="_blank"  href={"eduardo-avila-resume.pdf"}>resume</Link>
   </div>
 </nav>

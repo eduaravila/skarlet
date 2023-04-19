@@ -38,5 +38,4 @@ author: Eduardo Avila
 {#each items as project}
   <Resource {...project} />
 {/each}
-
 </div>

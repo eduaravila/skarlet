@@ -17,7 +17,7 @@
     </p>
   </a>
   <div>
-    <div class="flex-auto h-16">
+    <div class="flex-auto sm:h-16">
       {#each points as point}
         <p class="text-justify line-clamp-3 ">{point}</p>
       {/each}

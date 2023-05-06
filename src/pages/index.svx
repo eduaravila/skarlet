@@ -27,10 +27,9 @@ author: Eduardo Avila
 
 </script>
 
-<img src="/yo.jpeg" alt="Avatar" style="border-radius: 50%; width: 100px; height: 100px; margin-bottom: 1rem;" >
+🔧
 
-I'm Software engineer, who enjoys writing a variety of topics, 
-Iot, web development, mobile development, and other topics that I find interesting.
+I'm Software engineer, who code stuff as hobby and for a living.
 
 <br>
 <br>

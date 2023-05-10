@@ -23,18 +23,23 @@ author: Eduardo Avila
       id
       points
       metadata
+      resourcesLinksCollection{
+        items{
+          sys{
+            id
+          }
+        }
+      }
     }
   }
 }
   `);
-
   query(projects);
-
   $: items = $projects?.data?.resoursesCollection?.items ?? [];
   
 </script>
 
-<div class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-3 gap-3">
+<div class="flex flex-col">
 {#each items as project}
   <Resource {...project} />
 {/each}

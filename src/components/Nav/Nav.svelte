@@ -2,6 +2,7 @@
   import Link from "./Link.svelte";
   import LogoText from "./LogoText.svelte";
   $: blogUrl = process.env.BLOG_URL;
+  $: resumeHREF = process.env.RESUME_URL? process.env.RESUME_URL : "/eduardo-avila-resume.pdf";
 </script>
 
 <nav
@@ -21,6 +22,6 @@ p-8
     <Link href={"/"}>about</Link>    
     <Link href={"portfolio"}>portfolio</Link>
     <Link href={blogUrl}>blog</Link>
-    <Link target="_blank"  href={"eduardo-avila-resume.pdf"}>resume</Link>
+    <Link target="_blank"  href={resumeHREF}>resume</Link>
   </div>
 </nav>

@@ -1,7 +1,7 @@
 ---
-title: Hello World
+title: Hello World!
 layout: page
-date: 20 Nov 2021
+date: 9 May 2023
 author: Eduardo Avila
 ---
 
@@ -27,9 +27,14 @@ author: Eduardo Avila
 
 </script>
 
-🔧
+<div class="flex flex-col justify-center"> 
+  <div class="flex justify-center items-center content-center"> 
+    <div class="h-full"><img src="/pepeL.webp" class="w-5"/></div>
+    <p class="text-4xl">🔧</p>
+  </div>
+  <p class="text-base text-center">I'm <b>Eduardo!</b> A software engineer, i code stuff for a living and as a hobby</p>
+</div>
 
-I'm Software engineer, who code stuff as hobby and for a living.
 
 <br>
 <br>
@@ -55,8 +60,8 @@ I'm Software engineer, who code stuff as hobby and for a living.
 
 <br>
 <br>
-Follow Me Online Here:
 
+You can find me on:
 <ul>
 {#each items as socialLink}
   <li><a href={socialLink.url}>{socialLink.urlname}</a></li>

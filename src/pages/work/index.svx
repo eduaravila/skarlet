@@ -36,11 +36,15 @@ author: Eduardo Avila
   `);
   query(projects);
   $: items = $projects?.data?.resoursesCollection?.items ?? [];
-  
+
+  $: sortedPerDate = items.sort(
+		(a, b) => new Date(b.at).valueOf() - new Date(a.at).valueOf()
+	);
+
 </script>
 
 <div class="flex flex-col">
-{#each items as project}
+{#each sortedPerDate as project}
   <Resource {...project} />
 {/each}
 </div>

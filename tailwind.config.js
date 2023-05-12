@@ -1,5 +1,6 @@
 const production = !process.env.ROLLUP_WATCH;
 const defaultTheme = require("tailwindcss/defaultTheme");
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: {
@@ -30,8 +31,10 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
-      },
+				// Add any custom fonts here
+				sans: [...fontFamily.sans],
+				serif: [...fontFamily.serif],
+			},
       fontSize: {
         tiny: ".5rem",
         super_tiny: ".2rem",

@@ -6,30 +6,19 @@ author: Eduardo Avila
 ---
 
 <script>
-  import { operationStore,query } from "@urql/svelte";
-  import Article from "../components/Blog/Blog.svelte";
+  import { page } from '$app/stores';
+  import { getContextClient, gql, queryStore } from "@urql/svelte";
+  import  pepe from '$lib/static/pepeL.webp'
+  /** @type {import('./$types').PageData} */
+  export let data;
+
+  $: items = data.data?.socialsCollection?.items ?? [];
   
-  const projects = operationStore(`
-  query {
-  socialsCollection{
-    items{
-      url
-      urlname
-    }
-  }
-}
-  `);
-
-  query(projects);
-
-  $: items = $projects?.data?.socialsCollection?.items ?? [];
-
-
 </script>
 
 <div class="flex flex-col justify-center"> 
   <div class="flex justify-center items-center content-center"> 
-    <div class="h-full"><img src="/pepeL.webp" class="w-5"/></div>
+    <div class="h-full"><img src={"/pepeL.webp"} class="w-5"/></div>
     <p class="text-4xl">🔧</p>
   </div>
   <p class="text-base text-center">I'm <b>Eduardo!</b> A software engineer, i code stuff for a living and as a hobby</p>

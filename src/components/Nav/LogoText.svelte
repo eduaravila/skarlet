@@ -1,7 +1,6 @@
 <script>
-  import { page } from "@roxi/routify";
+  import { page } from "$app/stores";
   import { getTitle } from "../../utils/page";
-
   $: title = getTitle($page);
 </script>
 

@@ -9,7 +9,6 @@
 
   const items = resourcesLinksCollection?.items ?? [];
   $: mainLink = links?.[0] ?? null;
-
 </script>
 
 <div class="flex flex-col border-b-2 border-black">

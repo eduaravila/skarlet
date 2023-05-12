@@ -8,6 +8,7 @@ module.exports = {
       // may also want to include HTML files
       "./src/**/*.html",
       "./src/**/*.svx",
+      "./src/**/*.ts",
     ],
     enabled: production, // disable purge in dev
   },

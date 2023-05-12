@@ -3,8 +3,6 @@
   import Title from "../components/Title/Title.svelte";
   import ul from "../components/Ul/Ul.svelte";
   export { ul, h1 };
-
-  
 </script>
 
 <script>

@@ -1,20 +1,7 @@
 <script>
-  import { operationStore, query } from "@urql/svelte";
-    
-const projects = operationStore(`
-  query {
-  socialsCollection{
-    items{
-      url
-      urlname
-    }
-  }
-}
-  `);
+  export let projects;
 
-  query(projects);
-
-  $: items = $projects?.data?.socialsCollection?.items ?? [];
+  $: items = projects?.data?.socialsCollection?.items ?? [];
   $: year = new Date().getFullYear();
 </script>
 

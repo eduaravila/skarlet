@@ -1,28 +1,10 @@
 <script>
-    import { operationStore, query } from "@urql/svelte";
-
-    export let sys;
-
-    const q = operationStore(`
-    query($id: String!) {
-    resource(id: $id){
-        url
-        label
-        image{
-            url
-            title      
-        }
-        iconClass
-        imageUrl
-        }
-    }
-    `,{id: sys.id});
-
-    query(q);
-
-    $: resource = $q?.data?.resource ?? null;
-    $: label = resource?.label ?? null;
-    $: url = resource?.url ?? null;
+  
+    export let sys; 
+    export let resource;
+    export let label;
+    export let url;
+    
 </script>
 
 <div class="w-fit">

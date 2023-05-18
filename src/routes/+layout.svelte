@@ -6,7 +6,7 @@
     import "../app.css";
     import Footer from "../components/Footer/Footer.svelte";
     import Nav from "../components/Nav/Nav.svelte";
-    import Analytics from "../lib/Analytics.svelte";
+    import Analytics from "../lib/GoogleAnalytics.svelte";
     
     /** @type {import('./$types').LayoutData} */
     export let data;

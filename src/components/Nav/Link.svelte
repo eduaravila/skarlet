@@ -1,7 +1,7 @@
 <script>
   export let href;
   export let target;
-
+  
   target = target ? target : "_self";
 </script>
 

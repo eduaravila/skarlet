@@ -2,11 +2,11 @@
 <script>
     import { browser } from "$app/environment";
     import { page } from "$app/stores";
-    import Analytics from "$lib/Analytics.svelte";
     import { onMount } from "svelte";
     import "../app.css";
     import Footer from "../components/Footer/Footer.svelte";
     import Nav from "../components/Nav/Nav.svelte";
+    import Analytics from "../lib/Analytics.svelte";
     
     /** @type {import('./$types').LayoutData} */
     export let data;

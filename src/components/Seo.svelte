@@ -3,7 +3,8 @@ import { metatags, page, url } from '@roxi/routify';
 
 const ogImage ="https://eduardoavila.com/social-card.png";
 const description = $metatags.description || $page.description;
-const title = $metatags.title || $page.title
+const title = $metatags.title || $page.title;
+console.log(title)
 const articleDate = page.date ? new Date(page.date) : new Date();
 const author = "Eduardo Avila"
 const titleSeparator = "•";

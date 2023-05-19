@@ -5,6 +5,10 @@ date: 9 May 2023
 author: Eduardo Avila
 ---
 
+<svelte:head>
+    <title>Hello World!</title>
+</svelte:head>
+
 <script>
   import { page } from '$app/stores';
   import { getContextClient, gql, queryStore } from "@urql/svelte";

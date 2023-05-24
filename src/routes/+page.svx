@@ -47,7 +47,7 @@ author: Eduardo Avila
 <ul>
   <li>Spanish (native) </li>
   <li>English (business) </li>
-  <li>Japanese (noob like below N5) </li>
+  <li>Japanese (basic N5) </li>
 </ul>
 
 <br>

@@ -65,7 +65,7 @@ author: Eduardo Avila
 # Privacy
 
 My gpg fingerprint <i>77BF 5167 C412 766D 5E56  766F 5C32 27AC 04A4 7FC1</i>
-my public key is [here](/mygpg.key)
+my public key is [here](/mygpg.txt)
 
 <br>
 

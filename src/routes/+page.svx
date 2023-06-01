@@ -30,14 +30,14 @@ author: Eduardo Avila
 
 <br>
 
-# Tech
+# Tech 
 
-- golang
-- python
-- typescript
-- react
-- react Native
-- postgresql
+- Golang
+- JavaScript
+- Typescript
+- React
+- React Native
+- Postgresql
 
 <br>
 
@@ -64,12 +64,11 @@ author: Eduardo Avila
 
 # Privacy
 
-My gpg fingerprint <i>77BF 5167 C412 766D 5E56  766F 5C32 27AC 04A4 7FC1</i>
+My gpg fingerprint `77BF 5167 C412 766D`
 my public key is [here](/mygpg.txt)
 
 <br>
 
-# Spare some chage ( AKA donations )
-
+# Spare some chage ( donations )
 - My XMR: 8AJBj3CnF3y9woL1dy5B4tW1fUyHTmseJ1UTnyTy8boTN2cVGD1MjQ9bszizpon13LTPuJJ4Aen4x6Bvi67wSq1oRSobZf7
 - Freewallet https://freewallet.org/id/02df9548/xmr

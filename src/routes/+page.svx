@@ -29,9 +29,8 @@ author: Eduardo Avila
 
 
 <br>
-<br>
 
-<p class="text-lg bold">Technologies:</p>
+# Tech
 
 - golang
 - python
@@ -41,21 +40,36 @@ author: Eduardo Avila
 - postgresql
 
 <br>
-<br>
 
-<p class="text-lg bold">Languages:</p>
+# Natural Languages
+
 <ul>
-  <li>Spanish (native) </li>
-  <li>English (business) </li>
-  <li>Japanese (basic N5) </li>
+  <li>Spanish 🇲🇽(native) </li>
+  <li>English 🇬🇧(native-ish) </li>
+  <li>Japanese 🇯🇵(basic N5, learning) </li>
 </ul>
 
 <br>
-<br>
 
-You can find me on:
+
+# Contact and socials
+
 <ul>
 {#each items as socialLink}
   <li><a href={socialLink.url}>{socialLink.urlname}</a></li>
 {/each}
 </ul>
+
+<br>
+
+# Privacy
+
+My gpg fingerprint <i>77BF 5167 C412 766D 5E56  766F 5C32 27AC 04A4 7FC1</i>
+my public key is [here](/mygpg.key)
+
+<br>
+
+# Spare some chage ( AKA donations )
+
+- My XMR: 8AJBj3CnF3y9woL1dy5B4tW1fUyHTmseJ1UTnyTy8boTN2cVGD1MjQ9bszizpon13LTPuJJ4Aen4x6Bvi67wSq1oRSobZf7
+- Freewallet https://freewallet.org/id/02df9548/xmr

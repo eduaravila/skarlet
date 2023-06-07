@@ -39,6 +39,10 @@ module.exports = {
         tiny: ".5rem",
         super_tiny: ".2rem",
       },
+      boxShadow: {
+        'light': '6px 6px 0 #2d2e2e',
+        'dark': '6px 6px 0 white',
+      }
     },
   },
   variants: {

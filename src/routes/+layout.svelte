@@ -40,12 +40,10 @@
     md:mx-auto"
     >    
     <div
-    class="w-full
-    container
-    md:w-9/12 m-auto grid grid-cols-6 gap-0 self-center break-word"
+    class="w-full container md:w-9/12 m-auto grid grid-cols-6 gap-0 self-center break-word"
     >
     <div
-      class="bg-gray-300 mt-4 m-4 mb-0 md:m-0 md:mt-8 p-3 md:p-8 col-span-6 md:col-span-6"
+      class="bg-gray-300 mt-4 m-4 mb-0 md:m-0 md:mt-8 p-3 md:p-8 col-span-6 md:col-span-6 border-4 border-black dark:border-white shadow-light rounded dark:shadow-dark"
     >
       <slot />
     </div>

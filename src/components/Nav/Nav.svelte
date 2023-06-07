@@ -8,9 +8,7 @@
 </script>
 
 <nav
-  class="
-  bg-secondary-dark
-  dark:bg-secondary-light
+class="
   container
   w-full
   md:w-9/12

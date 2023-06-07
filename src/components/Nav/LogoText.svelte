@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="flex justify-center font-bold text-5xl text-primary-dark dark:text-primary-light select-none"
+  class="flex justify-center font-bold text-6xl text-primary-dark dark:text-primary-light select-none"
 >
   <h1>{title}</h1>
 </div>

@@ -8,8 +8,8 @@
 <a
   href={href}
   target={target}
-  class="text-primary-light text-xl dark:text-gray-50 hover:underline 
-  underline-offset-1 focus:outline-white select-none visited:text-primary-light visited:dark:text-gray-50"
+  class="text-primary-dark text-xl dark:text-gray-50 hover:underline 
+  underline-offset-1 no-underline focus:outline-white select-none visited:text-gray-600 visited:dark:text-gray-50 font-bold"
 >
   <slot /></a
 >

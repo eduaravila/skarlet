@@ -11,15 +11,15 @@
   $: mainLink = links?.[0] ?? null;
 </script>
 
-<div class="flex flex-col border-b-2 border-black">
-  <div class="my-5">
+<div class="flex flex-col border-b-[1px] border-black">
+  <div class="my-4">
     <p
-      class="text-left text-3xl md:text-2xl font-bold w-auto inline-block break-words mb-1"
+      class="text-left text-3xl md:text-2xl font-bold w-auto inline-block break-words mb-4"
     >
       {title}
     </p>
   <div>
-    <div class="flex-auto ">
+    <div class="flex-auto mb-2">
       {#each points as point}
         <p class="text-justify line-clamp-3 ">{point}</p>
       {/each}

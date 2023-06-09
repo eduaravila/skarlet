@@ -40,8 +40,8 @@ module.exports = {
         super_tiny: ".2rem",
       },
       boxShadow: {
-        'light': '8px 8px 0 #2d2e2e',
-        'dark': '8px 8px 0 white',
+        'light': '7px 7px 0 #2d2e2e',
+        'dark': '7px 7px 0 white',
       }
     },
   },

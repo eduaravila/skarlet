@@ -10,8 +10,8 @@
 </script>
 
 <div>
-  <div class="mb-4 container">
-    <Title>{title}</Title>
+  <div class="mb-4 container flex justify-center">
+    <Title>{title}</Title>    
   </div>
   <slot>
     <!-- the mdsvex content will be slotted in here -->

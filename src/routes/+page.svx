@@ -6,7 +6,7 @@ author: Eduardo Avila
 ---
 
 <svelte:head>
-    <title>Hello World!</title>
+    <title>Hello World!</title>    
 </svelte:head>
 
 <script>

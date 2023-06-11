@@ -69,6 +69,6 @@ my public key is [here](/mygpg.txt)
 
 <br>
 
-# Spare some chage ( donations )
+# Spare some change ( donations )
 - My XMR: 8AJBj3CnF3y9woL1dy5B4tW1fUyHTmseJ1UTnyTy8boTN2cVGD1MjQ9bszizpon13LTPuJJ4Aen4x6Bvi67wSq1oRSobZf7
 - Freewallet https://freewallet.org/id/02df9548/xmr

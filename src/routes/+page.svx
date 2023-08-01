@@ -24,7 +24,7 @@ author: Eduardo Avila
     <div class="h-full"><img src={"/pepeL.webp"} class="w-5"/></div>
     <p class="text-4xl">🔧</p>
   </div>
-  <p class="text-base text-center">I'm <b>Eduardo!</b> A software engineer, i code stuff for a living and as a hobby</p>
+  <p class="text-base text-center">I'm <b>Eduardo!</b> A software engineer / computer scientist. I code stuff for a living and as a hobby</p>
   <p>You can reach me directly through any of the means listed below.</p>
 </div>
 
@@ -57,7 +57,12 @@ author: Eduardo Avila
 
 <ul>
 {#each items as socialLink}
-  <li><a href={socialLink.url} class="underline">{socialLink.urlname}</a></li>
+  {#if socialLink.link != ""}
+    <li><a href={socialLink.link} target="_blank">{socialLink.name}</a></li>
+    {:else}
+    <li>{socialLink.name}</li>
+  {/if}
+  
 {/each}
 </ul>
 

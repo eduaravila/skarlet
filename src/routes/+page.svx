@@ -24,14 +24,15 @@ author: Eduardo Avila
     <div class="h-full"><img src={"/pepeL.webp"} class="w-5"/></div>
     <p class="text-4xl">🔧</p>
   </div>
-  <p class="text-base text-center">I'm <b>Eduardo!</b> A software engineer / computer scientist. I code stuff for a living and as a hobby</p>
-  <p>You can reach me directly through any of the means listed below.</p>
+  <pre class="text-base text-center">I'm <b>Eduardo!</b> A software engineer / computer scientist. I code stuff for a living and as a hobby. 
+  You can reach me directly through any of the means listed below.</pre>
+  
 </div>
 
 
 <br>
 
-# Tech 
+# Tech ( not exhaustive )
 
 - Golang
 - JavaScript

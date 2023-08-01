@@ -25,6 +25,7 @@ author: Eduardo Avila
     <p class="text-4xl">🔧</p>
   </div>
   <p class="text-base text-center">I'm <b>Eduardo!</b> A software engineer, i code stuff for a living and as a hobby</p>
+  <p>You can reach me directly through any of the means listed below.</p>
 </div>
 
 
@@ -52,7 +53,7 @@ author: Eduardo Avila
 <br>
 
 
-# Contact and socials
+# Contact
 
 <ul>
 {#each items as socialLink}

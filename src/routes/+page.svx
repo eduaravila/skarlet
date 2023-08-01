@@ -57,10 +57,10 @@ author: Eduardo Avila
 
 <ul>
 {#each items as socialLink}
-  {#if socialLink.link != ""}
-    <li><a href={socialLink.link} target="_blank">{socialLink.name}</a></li>
+  {#if socialLink.url}
+    <li><a href={socialLink.url} target="_blank">{socialLink.urlname}</a></li>
     {:else}
-    <li>{socialLink.name}</li>
+    <li>{socialLink.urlname}</li>
   {/if}
   
 {/each}

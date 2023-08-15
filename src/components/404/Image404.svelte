@@ -3,7 +3,7 @@
 >
   <div>
     <pre
-      class="text-super_tiny md:text-tiny select-none text-primary-light dark:text-gray-100">
+      class="text-super_tiny md:text-tiny select-none text-gray-600 dark:text-gray-100">
     ░░░░░░░░░░░░░░░░▒▒░░░░░░                    ░░░░  ░░  ░░░░░░░░  ░░    ░░    ▓▓▓▓▓▓░░    ░░░░▓▓▓▓░░░░                  ░░            ░░░░░░░░    ░░▒▒░░░░░░
 ▒▒░░░░░░  ░░░░░░░░░░░░░░░░                  ░░  ░░░░    ░░░░░░        ░░  ░░▓▓▓▓▓▓▓▓▒▒░░░░▓▓▓▓▓▓░░░░                ░░            ░░░░  ░░    ░░  ░░░░    
   ░░░░░░░░  ░░░░░░░░░░░░░░░░                    ░░  ░░  ░░░░░░    ░░  ░░  ░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░                          ░░░░░░░░  ░░░░  ░░░░    ░░
